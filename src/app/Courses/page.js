@@ -1,0 +1,260 @@
+"use client"
+import Image from "next/image";
+import { useState,useEffect } from "react";
+import Footer from "@/Components/Footer/page";
+import Overheadbar from "@/Components/Overhead-bar/page";
+import Link from "next/link";
+import {  GraduationCap,
+  BookOpen,
+  Monitor,
+  BriefcaseBusiness,
+  Users, 
+  ChevronLeft,
+  ChevronRight} from "lucide-react";
+
+export default function Courses() {
+
+    const [state,setState]=useState(0)
+    const [text,setText]=useState("")
+    const [letter,setLetter]=useState("")
+
+    const array1=[
+        {id:2,imager:"/ngo1.jpeg"},
+        {id:3,imager:"/ngo2.jpeg"},
+        {id:4,imager:"/ngo3.jpeg"},
+        {id:5,imager:"/ngo4.jpeg"},
+        {id:6,imager:"/ngo5.jpeg"}
+    ]
+
+    
+
+     const Desktop=window.innerWidth>=1000
+        const itemsperpage=Desktop?3:1
+        const start=state*itemsperpage
+
+    const visible=array1.slice(start,start+itemsperpage)
+
+    function prev(){
+        if(start>0){
+            setState(state-1)
+        }
+    }
+
+    useEffect(() => {
+       
+    const timer = setTimeout(() => {
+        
+        if (start+itemsperpage< array1.length) {
+            setState((currentState) => currentState + 1);
+        } else {
+            setState(0);
+        }
+    }, 5000);
+
+   
+
+    return () => clearTimeout(timer);
+}, [state,itemsperpage,start]);
+
+
+function next() {
+  const itemsPerPage = window.innerWidth >= 1000 ? 3 : 1;
+
+  if (start + itemsPerPage < array1.length) {
+    setState((currentState) => currentState + 1);
+  } else {
+    setState(0);
+  }
+}
+          
+    
+
+    
+  return (
+    <div className="flex flex-col flex-1 gap-0 tracking-widest leading-loose  items-center overflow-x-hidden min-h-screen justify-center bg-white font-sans">
+          {/* overhead bar */}
+          <Overheadbar/>
+          
+          {/* main */}
+          <div className="flex flex-col   w-full -mt-10">
+            <div className="relative w-full">
+            <img src="/courses.jpeg" className="w-full h-[790px] max-[887px]:mt-40 object-cover"/>
+            <div className="absolute inset-0 z-10 flex flex-col items-center justify-center w-full rounded-lg bg-black/56  text-center text-white">
+                  <p className="text-7xl font-extrabold">Building skills for tomorrow</p>
+                </div>
+            </div>
+            <div className="p-30 max-[1100px]:p-10 max-[500px]:-ml-5  max-[1100px]:p-5 flex flex-col items-center gap-6 justify-center  font-sans text-black">
+                <p className="text-xl">3DWebSoft Foundation offers inclusive, future-ready learning courses designed to empower youth, students, teachers, and communities with digital, professional, and employability skills. </p>
+                <p className="text-xl">With course durations ranging from short 2-hour awareness modules to intensive 6-month career-oriented programs, our initiatives focus on bridging the digital divide and creating sustainable opportunities through technology-enabled education and skilling.</p>
+                <div className="grid grid-cols-2 max-[1100px]:grid-cols-1  gap-x-10 gap-y-20 pt-20">
+                    <div className="bg-[#06896B] flex flex-col gap-10 w-[40vw] max-[1100px]:w-[90vw]  rounded-4xl text-white p-15  min-min-h-[700px]">
+                            <p className="text-4xl font-bold ">Career & Skill Development</p>
+                            <div className="h-0.5 w-[400px] bg-white"></div>
+                            <p className="text-xl">Our Career and Skill Development courses equip youth with industry-relevant skills, workplace readiness, and digital competencies to enhance employability and livelihood opportunities.</p>
+                            <div className="flex flex-col gap-3">
+                                <p className="text-3xl font-bold">Focus Areas</p>
+                                <ul className="list-disc flex flex-col p-5 text-xl">
+                                    <li>Digital Literacy & Office Productivity</li>
+                                    <li>Communication & Professional Skills</li>
+                                    <li>Employability & Workplace Readiness</li>
+                                    <li>Entrepreneurship & Financial Awareness</li>
+                                    <li>Web & Frontend Development Fundamentals</li>
+                                </ul>
+                            </div>
+                    </div>
+                   <div className="bg-[#06396B] flex flex-col gap-10 w-[40vw] max-[1100px]:w-[90vw] rounded-4xl text-white p-15 min-h-[700px]">
+                            <p className="text-4xl font-bold ">STEM for Schools & Teachers</p>
+                            <div className="h-0.5 w-[400px] bg-white"></div>
+                            <p className="text-xl">Our STEM education initiatives promote innovation, critical thinking, and technology-enabled learning among students, while supporting teachers with modern teaching practices and digital tools.</p>
+                            <div className="flex flex-col gap-3">
+                                <p className="text-3xl font-bold">Focus Areas</p>
+                                <ul className="list-disc flex flex-col p-5 text-xl">
+                                    <li>Science, Technology & Mathematics</li>
+                                    <li>Coding & Computational Thinking</li>
+                                    <li>Robotics & Digital Learning</li>
+                                    <li>Teacher Capacity Building</li>
+                                    <li>AI & Emerging Technology Awareness</li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div className="bg-[#06896B] flex flex-col gap-10 w-[40vw] max-[1100px]:w-[90vw] rounded-4xl text-white p-15 min-h-[700px]">
+                            <p className="text-4xl font-bold ">AI-Enabled Career Courses in IT & ITeS</p>
+                            <div className="h-0.5 w-[400px] bg-white"></div>
+                            <p className="text-xl">These courses prepare learners for emerging opportunities in the digital economy through technology-focused, industry-aligned training.</p>
+                            <div className="flex flex-col gap-3">
+                                <p className="text-3xl font-bold">Focus Areas</p>
+                                <ul className="list-disc flex flex-col p-5 text-xl">
+                                    <li>Artificial Intelligence Fundamentals</li>
+                                    <li>Cybersecurity Awareness</li>
+                                    <li>IT & ITeS Skills</li>
+                                    <li>Web Development & Digital Operations</li>
+                                    <li>Professional Skills for Technology Careers</li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div className="bg-[#06396B] flex flex-col gap-10 w-[40vw] max-[1100px]:w-[90vw] rounded-4xl text-white p-15 min-h-[700px]">
+                            <p className="text-4xl font-bold ">Entrepreneurial Courses</p>
+                            <div className="h-0.5 w-[400px] bg-white"></div>
+                            <p className="text-xl">Our entrepreneurial learning programmes encourage self-reliance and innovation by helping learners develop the business, financial, and digital skills needed to start or grow livelihood opportunities and micro-enterprises.</p>
+                            <div className="flex flex-col gap-3">
+                                <p className="text-3xl font-bold">Focus Areas</p>
+                                <ul className="list-disc flex flex-col p-5 text-xl">
+                                    <li>Entrepreneurship Development</li>
+                                    <li>Digital Marketing Basics</li>
+                                    <li>Financial & Business Literacy</li>
+                                    <li>Small Business Management</li>
+                                    <li>Communication & Customer Engagement</li>
+                                </ul>
+                            </div>
+                    </div>
+                     <div className="bg-[#06896B] flex flex-col gap-10 w-[40vw] max-[1100px]:w-[90vw] rounded-4xl text-white p-15 min-h-[700px]">
+                            <p className="text-4xl font-bold ">ChangeMaker Academy (CMA)</p>
+                            <div className="h-0.5 w-[400px] bg-white"></div>
+                            <p className="text-xl">Our Career and Skill Development courses equip youth with industry-relevant skills, workplace readiness, and digital competencies to enhance employability and livelihood opportunities.</p>
+                            <div className="flex flex-col gap-3">
+                                <p className="text-3xl font-bold">Focus Areas</p>
+                                <ul className="list-disc flex flex-col p-5 text-xl">
+                                    <li>Develop entrepreneurial and business skills to turn ideas into action</li>
+                                    <li>Build the confidence to start and run your own enterprise</li>
+                                    <li>Work on real-world business challenges with mentor support</li>
+                                   
+                                </ul>
+                            </div>
+                    </div>
+                    <div className="bg-[#06396B] flex flex-col gap-10 w-[40vw] max-[1100px]:w-[90vw] rounded-4xl text-white p-15 min-h-[700px]">
+                            <p className="text-4xl font-bold ">Awareness Courses</p>
+                            <div className="h-0.5 w-[400px] bg-white"></div>
+                            <p className="text-xl">Our awareness courses are designed to build digital confidence, social awareness, and responsible technology usage across communities.</p>
+                            <div className="flex flex-col gap-3">
+                                <p className="text-3xl font-bold">Focus Areas</p>
+                                <ul className="list-disc flex flex-col p-5 text-xl">
+                                    <li>Digital & Financial Literacy</li>
+                                    <li>Cyber Safety & Online Awareness</li>
+                                    <li>Responsible Use of Technology</li>
+                                    <li>Health, Hygiene & Community Awareness</li>
+                                    <li>AI Awareness for Everyday Life</li>
+                                </ul>
+                            </div>
+                    </div>
+                    
+                </div>
+                <div className="pt-10 flex flex-col items-center gap-10">
+                    <p className="text-[#06896B] text-4xl font-bold">Our Approach</p>
+                    <p className="text-xl">Through these courses, 3DWebSoft Foundation continues to enable education, employability, and digital empowerment at scale.</p>
+                    <div className="grid grid-cols-3 max-[800px]:grid-cols-1 gap-x-9 gap-y-10">
+                        <div className="flex gap-5 items-center">
+                            <GraduationCap className="bg-[#06896B] text-white rounded-lg p-2" size={70}/>
+                            <p className="text-xl font-semibold">Industry-aligned curriculum</p>
+                            
+                        </div>
+                        <div className="flex gap-5 items-center">
+                            <BookOpen className="bg-[#06896B] text-white rounded-lg p-2" size={70}/>
+                            <p className="text-xl font-semibold">Practical & experiential learning</p>
+                            
+                        </div>
+                        <div className="flex gap-5 items-center">
+                            <Monitor className="bg-[#06896B] text-white rounded-lg p-2" size={70}/>
+                            <p className="text-xl font-semibold">Hybrid and digital learning models</p>
+                            
+                        </div>
+                        
+                        <div className="flex gap-5 items-center">
+                            <BriefcaseBusiness className="bg-[#06896B] text-white rounded-lg p-2" size={70}/>
+                            <p className="text-xl font-semibold">Career guidance & placement support</p>
+                            
+                        </div>
+                        <div className="flex gap-5 items-center">
+                            <Users className="bg-[#06896B] text-white rounded-lg p-2" size={70}/>
+                            <p className="text-xl font-semibold">Inclusive skilling for underserved communities</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div className="flex gap-8 items-center justify-center pt-20">
+                    <ChevronLeft size={70} onClick={prev}/>
+                    {
+                        visible.map((x)=>(
+                                    <div  className="flex gap-96 transform-transition duration-500" key={x.id}>
+                        <img src={x.imager} className="h-[400px] max-[1000px]:w-[80vw] max-[1000px]:h-auto  w-[20vw]"/>
+                    </div>
+                        ))
+                    
+}
+                    <ChevronRight size={70} onClick={next}/>
+                </div>
+                 <div className=" flex flex-col items-center w-full  gap-7 pt-20 p-30 ">
+                        <div className="flex flex-col items-start w-full gap-3 px-17">
+                        <p className="text-[#06896B] font-bold text-4xl">Contact Us</p>
+                        <p className="text-black text-2xl">For Enrollment, kindly share your Details</p>
+                        </div>
+                        <div className="grid grid-cols-2 gap-x-7 gap-y-7">
+                            <select value={text} onChange={(e)=>setText(e.target.value)} className="w-[30vw] h-[50px] border-1 p-2 border-black">
+                                <option value="">select course preference</option>
+                                <option value="Awareness course">Awareness course</option>
+                                <option value="Career & Skill development">Career & Skill development</option>
+                                <option value="Education Coursese">Education Courses</option>
+                                <option value="Enterprenuerial courses">Enterprenuerial courses</option>
+                                <option value="AI enabled courses in IT and ITES">AI enabled courses in IT and ITES</option>
+                            </select>
+                            <input placeholder="Name" className="w-[30vw] p-1 h-[50px] border-1 border-black"/>
+                            <input  placeholder="Mobile No." className="w-[30vw] p-1 h-[50px] border-1 border-black"/>
+                            <input type="email" placeholder="Email Id" className="w-[30vw] p-1 h-[50px] border-1 border-black"/>
+                            <input placeholder="State" className="w-[30vw] p-1 h-[50px] border-1 border-black"/>
+                            <select value={letter} onChange={(e)=>setLetter(e.target.value)} className="w-[30vw] h-[50px] border-1 border-black">
+                                <option value="">select gender</option>
+                                <option value="male">male</option>
+                                <option value="female">female</option>
+                            </select>
+                        </div>
+                    <button className="bg-[#06896B] w-[200px] text-white rounded-lg p-1 hover:scale-105 hover:bg-green-800">Submit</button>
+                </div>
+               
+                                </div>
+                                
+
+</div>
+{/* footer */}
+<Footer/>          
+    </div>
+  );
+}
