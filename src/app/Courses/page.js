@@ -15,6 +15,7 @@ import {  GraduationCap,
 export default function Courses() {
 
     const [state,setState]=useState(0)
+    const [isDesktop,setIsDesktop]=useState(false)
     const [text,setText]=useState("")
     const [letter,setLetter]=useState("")
 
@@ -28,8 +29,7 @@ export default function Courses() {
 
     
 
-     const Desktop=window.innerWidth>=1000
-        const itemsperpage=Desktop?3:1
+      const itemsperpage=isDesktop?3:1
         const start=state*itemsperpage
 
     const visible=array1.slice(start,start+itemsperpage)
@@ -39,6 +39,17 @@ export default function Courses() {
             setState(state-1)
         }
     }
+
+    useEffect(() => {
+        function updateViewport() {
+            setIsDesktop(window.innerWidth >= 1000)
+        }
+
+        updateViewport()
+        window.addEventListener("resize", updateViewport)
+
+        return () => window.removeEventListener("resize", updateViewport)
+    }, [])
 
     useEffect(() => {
        
@@ -58,9 +69,7 @@ export default function Courses() {
 
 
 function next() {
-  const itemsPerPage = window.innerWidth >= 1000 ? 3 : 1;
-
-  if (start + itemsPerPage < array1.length) {
+    if (start + itemsperpage < array1.length) {
     setState((currentState) => currentState + 1);
   } else {
     setState(0);
