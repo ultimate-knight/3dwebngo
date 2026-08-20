@@ -69,27 +69,27 @@ export default function About() {
       {/* main */}
       <div className="flex flex-col   w-full -mt-10">
         <div className="relative w-full">
-          <img src="/abouter.jpeg" className="w-full h-[790px] max-[887px]:mt-20 object-cover" />
+          <img src="/abouter.jpeg" className="w-full h-[790px]  max-[887px]:mt-20 object-cover" />
           <div className="absolute inset-0 z-10 flex flex-col items-center justify-center w-full rounded-lg max-[887px]:mt-20 bg-black/56  text-center text-white">
-            <p className="text-7xl font-extrabold">About us</p>
+            <p className="text-7xl font-extrabold max-[500px]:text-4xl">About us</p>
           </div>
         </div>
         <div className="p-20 max-[1000px]:p-5 max-[500px]:p-1 max-[887px]:p-5 font-sans text-black">
           <div className="flex flex-col gap-5 p-10 text-black">
-            <p className="text-[#06896B] text-3xl  uppercase font-bold tracking-widest">
+            <p className="text-[#06896B] text-3xl  uppercase font-bold tracking-widest max-[500px]:text-2xl">
               vision
             </p>
-            <p className="font-sans">
+            <p className="font-sans max-[500px]:text-sm">
               To become a leading organization in skill development and
               technology solutions — empowering individuals with knowledge and
               practical skills to build a better, self-reliant future for all.
             </p>
           </div>
           <div className="flex flex-col gap-5  p-10">
-            <p className="text-[#06896B] text-3xl  uppercase font-bold tracking-widest">
+            <p className="text-[#06896B] max-[500px]:text-2xl text-3xl  uppercase font-bold tracking-widest">
               Mission & Values
             </p>
-            <ul className="px-6 flex flex-col gap-3 list-disc">
+            <ul className="px-6 flex flex-col max-[500px]:text-sm gap-3 list-disc">
               <li>
                 Be Customer Centric — put students and employers first by
                 providing high-quality training aligned with industry standards.
@@ -114,10 +114,10 @@ export default function About() {
             </ul>
           </div>
           <div className="flex flex-col gap-5  p-10">
-            <p className="text-[#06896B] text-3xl  uppercase font-bold tracking-widest">
+            <p className="text-[#06896B] max-[500px]:text-2xl text-3xl  uppercase font-bold tracking-widest">
               Governing body
             </p>
-            <p>
+            <p className="max-[500px]:text-sm">
               3DWEBSOFT Foundation is a non-profit organization incorporated
               under Section 8 of the Companies Act, 2013 and registered with the
               Government of India. Pursuant to the provisions of the Act, given
@@ -132,10 +132,10 @@ export default function About() {
                 className="w-[150px] h-[150px] border-4 border-green-600 aspect-square rounded-full"
               />
               <div className="flex flex-col items-center gap-1">
-                <p className="text-xl text-[#06896B] font-bold">
+                <p className="text-xl text-[#06896B] font-bold max-[500px]:text-2xl">
                   Santosh H Rathod
                 </p>
-                <p>Founder & CEO</p>
+                <p className="">Founder & CEO</p>
               </div>
               <p className="text-center w-[25vw] max-[1000px]:w-[70vw] text-sm">
                 Leads the vision and strategy for 3DWEBSOFT.INC across training,
@@ -251,8 +251,8 @@ export default function About() {
           </div>
           <div className="flex max-[1000px]:flex-col gap-7 p-7 items-center justify-center pt-20">
             <div className="flex flex-col  gap-5 max-[1000px]:order-2">
-              <p className="text-3xl text-[#06896B] font-semibold">Founder Message</p>
-              <p>
+              <p className="text-3xl text-[#06896B] font-semibold max-[500px]:text-2xl">Founder Message</p>
+              <p className="max-[500px]:text-sm">
                 Welcome to 3DWebSoft Foundation. It gives me immense pleasure to
                 welcome you to an organization dedicated to transforming lives
                 through education, skill development, and employment
@@ -260,13 +260,13 @@ export default function About() {
                 and job seekers by providing quality training programs that
                 prepare them for a successful future. 
               </p>
-              <p>In today’s fast-changing
+              <p className="max-[500px]:text-sm">In today’s fast-changing
                 world, skills are the key to growth and self-reliance. Through
                 our IT courses, vocational programs, job-oriented training, and
                 placement assistance, we aim to bridge the gap between learning
                 and earning.</p>
-              <p>At 3DWebSoft Foundation, we believe every individual has the potential to succeed when given the right guidance and opportunities. We are committed to creating a platform where dreams turn into careers and talent turns into success.
-I invite students, professionals, institutions, CSR partners, and communities to join hands with us in building a brighter and more skilled tomorrow.
+              <p className="max-[500px]:text-sm">At 3DWebSoft Foundation, we believe every individual has the potential to succeed when given the right guidance and opportunities. We are committed to creating a platform where dreams turn into careers and talent turns into success.</p>
+<p className="max-[500px]:text-sm">I invite students, professionals, institutions, CSR partners, and communities to join hands with us in building a brighter and more skilled tomorrow.
 Together, let us learn, grow, and succeed.</p>
             </div>
             <img src="/director.jpeg" className="w-[25vw] max-[1000px]:w-[85vw] max-[1000px]:h-auto max-[1000px]:order-1 h-[350px] shrink-0"/>

@@ -69,28 +69,28 @@ export default function App() {
           <Overheadbar/>
           
           {/* main */}
-          <div className="flex flex-col  items-start justify-between w-full">
+          <div className="flex flex-col  items-start -mt-10 justify-between w-full">
             <div className="flex">
-              <button onClick={prev}><ChevronLeft size={46} className="h-14 ml-10 z-20 absolute cursor-pointer bg-[#06896B] text-white"/></button>
+              <button onClick={prev}><ChevronLeft size={46} className="h-14 max-[940px]:hidden ml-10 z-20 absolute cursor-pointer bg-[#06896B] text-white"/></button>
               <div className="relative" >
                 <img
                   src={slides[data].image}
-                  className="min-w-screen object-cover  rounded-lg max-[887px]:mt-20  h-[600px]"
+                  className="min-w-screen object-cover  rounded-lg max-[887px]:mt-20   h-[600px]"
                   
                 />
                 <div className="absolute inset-0 z-10 flex flex-col items-center justify-center rounded-lg max-[887px]:mt-20 bg-black/56 px-6 text-center text-white">
-                  <p className="text-4xl font-extrabold">{slides[data].heading}</p>
-                  <p className="mt-2 max-w-3xl text-base font-medium tracking-widest">{slides[data].text}</p>
+                  <p className="text-4xl font-extrabold max-[500px]:text-xl">{slides[data].heading}</p>
+                  <p className="mt-2 max-w-3xl text-base max-[500px]:text-sm font-medium tracking-widest">{slides[data].text}</p>
                 </div>
               </div>
-              <button onClick={next}><ChevronRight size={46} className="h-14 -ml-20 z-20 bg-[#06896B] absolute cursor-pointer text-white"/></button>
+              <button onClick={next}><ChevronRight size={46} className="h-14 max-[940px]:hidden -ml-20 z-20 bg-[#06896B] absolute cursor-pointer text-white"/></button>
             </div>
             <div className="p-15 max-[1000px]:p-5 mt-20 text-black">
               <div className="flex flex-col gap-6">
-            <p className="text-3xl text-[#06896B] font-bold ">3DWEBSOFT Foundation</p>
-            <p className="text-xl font-semibold">Empowering India with Education, Skills, and Support</p>
+            <p className="text-3xl text-[#06896B] font-bold max-[500px]:text-3xl">3DWEBSOFT Foundation</p>
+            <p className="text-xl font-semibold max-[500px]:text-sm">Empowering India with Education, Skills, and Support</p>
             </div>
-            <div className="text-left text-lg flex pt-10 tracking-widest flex-col  gap-7">
+            <div className="text-left text-lg flex pt-10 tracking-widest flex-col  gap-7 max-[500px]:text-sm">
             <p>3DWEBSOFT Foundation is a non-profit organization incorporated under Section 8 of the Companies Act, 2013 and registered with the Government of India. The Foundation is committed to transforming lives through education, skill development, employment support, women empowerment, digital literacy, healthcare awareness, and community development.</p>
             <p>With a focus on underserved communities, 3DWEBSOFT Foundation works to create equal opportunities, strengthen livelihoods, and promote dignity, inclusion, and self-reliance.</p>
             <p>Its mission is to empower youth, women, students, and job seekers by providing practical education, industry-relevant skills, career-focused training, and employment opportunities. The Foundation aims to bridge the gap between learning and earning while supporting communities in building sustainable livelihoods.</p>
@@ -103,13 +103,14 @@ export default function App() {
 
             {/* rotating card spotlight */}
             <div className="flex flex-col gap-5 items-center justify-center pt-30 w-full text-black">
-              <p className="uppercase text-[#06896B] font-semibold text-6xl">Spotlight</p>
-              <p className="text-xl font-semibold text-gray-700 tracking-wider p-5">A glimpse into 3DWEBSOFT Foundation's education, employment, women empowerment, and community development initiatives.</p>
+              
+              <p className="uppercase text-[#06896B] font-semibold text-6xl max-[500px]:text-3xl">Spotlight</p>
+              <p className="text-xl font-semibold text-gray-700 tracking-wider p-5 max-[500px]:text-lg text-center">A glimpse into 3DWEBSOFT Foundation's education, employment, women empowerment, and community development initiatives.</p>
 
 
               <div className="grid grid-cols-2 max-[750px]:grid-cols-1 justify-items-center  gap-5 p-5">
                 <div className="flex flex-col gap-3">
-                  <p className="text-3xl font-semibold text-gray-600">Computer Training Programs</p>
+                  <p className="text-3xl font-semibold text-gray-600 max-[500px]:text-2xl">Computer Training Programs</p>
             <div className="group w-[45vw] max-[750px]:w-[90vw] h-[500px] [perspective:1000px]">
   
   
@@ -135,7 +136,7 @@ export default function App() {
     {/* rotating cards */}
 
       <div className="flex flex-col gap-3">
-                  <p className="text-3xl font-semibold text-gray-600">Web Designing & Development</p>
+                  <p className="text-3xl font-semibold text-gray-600 max-[500px]:text-2xl">Web Designing & Development</p>
       <div class="group w-[45vw] h-[500px] max-[750px]:w-[90vw] [perspective:1000px]">
   
   
@@ -157,7 +158,7 @@ export default function App() {
     </div>
     </div>
       <div className="flex flex-col gap-3">
-                  <p className="text-3xl font-semibold text-gray-600">Full Stack Development</p>
+                  <p className="text-3xl font-semibold text-gray-600 max-[500px]:text-2xl">Full Stack Development</p>
       <div class="group  w-[45vw] h-[500px] max-[750px]:w-[90vw] [perspective:1000px]">
   
   
@@ -179,7 +180,7 @@ export default function App() {
     </div>
     </div>
     <div className="flex flex-col gap-3">
-                  <p className="text-3xl font-semibold text-gray-600">Digital Literacy in Rural Areas</p>
+                  <p className="text-3xl font-semibold text-gray-600 max-[500px]:text-2xl">Digital Literacy in Rural Areas</p>
       <div class="group  w-[45vw] h-[500px] max-[750px]:w-[90vw] [perspective:1000px]">
   
   
@@ -201,7 +202,7 @@ export default function App() {
     </div>
     </div>
       <div className="flex flex-col gap-3">
-                  <p className="text-3xl font-semibold text-gray-600">Job Drives</p>
+                  <p className="text-3xl font-semibold text-gray-600 max-[500px]:text-2xl">Job Drives</p>
       <div class="group  w-[45vw] h-[500px] max-[750px]:w-[90vw] [perspective:1000px]">
   
   
@@ -222,7 +223,7 @@ export default function App() {
     
     </div>
     </div><div className="flex flex-col gap-3">
-                  <p className="text-3xl font-semibold text-gray-600">Women Empowerment Programs</p>
+                  <p className="text-3xl font-semibold text-gray-600 max-[500px]:text-3xl">Women Empowerment Programs</p>
       <div class="group  w-[45vw] h-[500px]  max-[750px]:w-[90vw]  [perspective:1000px]">
   
   
@@ -249,19 +250,19 @@ export default function App() {
 </div>
 <div className="flex max-[979px]:flex max-[979px]:flex-col gap-3 p-5 items-center justify-center w-full pt-20">
   <div className="flex  flex-col gap-5 ">
-              <p className="text-center text-[#06896B] font-semibold text-3xl">Impact story</p>
+              <p className="text-center text-[#06896B] font-semibold text-3xl max-[500px]:text-3xl">Impact story</p>
              <img src="/shalini.jpeg" className=" hover:scale-110 max-[979px]:w-[90vw] max-[979px]:h-auto max-[979px]:h-[600px] w-[400px] h-[300px]"/>
-             <p className="w-[27vw] max-[979px]:w-[80vw] text-gray-600 text-center italic tracking-widest">Shalini: Read Shalini’s inspiring journey from our women empowerment program. With limited opportunities for employment, she developed practical tailoring and self-employment skills through training, helping her gain confidence and work toward becoming financially independent.</p>   
+             <p className="w-[27vw] max-[979px]:w-[80vw] text-gray-600 text-center italic tracking-widest max-[500px]:text-sm">Shalini: Read Shalini’s inspiring journey from our women empowerment program. With limited opportunities for employment, she developed practical tailoring and self-employment skills through training, helping her gain confidence and work toward becoming financially independent.</p>   
   </div>
   <div className="flex flex-col gap-5">
-     <p className="text-center text-[#06896B] font-semibold text-3xl">Success story</p>
+     <p className="text-center text-[#06896B] font-semibold text-3xl max-[500px]:text-3xl">Success story</p>
              <img src="/rahul.jpeg" className=" hover:scale-110 max-[979px]:w-[90vw] max-[979px]:h-auto max-[979px]:h-[600px] w-[400px] h-[300px]"/> 
-             <p className="w-[27vw] max-[979px]:w-[80vw] text-gray-600 text-center italic tracking-widest">Rahul: Read Rahul’s success story as he developed his computer and web development skills through practical training. With improved technical knowledge, hands-on experience, and placement support, he gained the confidence to pursue new career opportunities in the technology sector.</p>     
+             <p className="w-[27vw] max-[979px]:w-[80vw] text-gray-600 text-center italic tracking-widest max-[500px]:text-sm">Rahul: Read Rahul’s success story as he developed his computer and web development skills through practical training. With improved technical knowledge, hands-on experience, and placement support, he gained the confidence to pursue new career opportunities in the technology sector.</p>     
   </div>
   <div className="flex flex-col gap-5">
-    <p className="text-center text-[#06896B] font-semibold text-3xl">Community Story</p>
+    <p className="text-center text-[#06896B] font-semibold text-3xl max-[500px]:text-3xl">Community Story</p>
              <img src="/community.jpeg" className="hover:scale-110 max-[979px]:w-[90vw] max-[979px]:h-auto max-[979px]:h-[600px] w-[400px] h-[300px]"/>   
-             <p className="w-[29vw] max-[979px]:w-[80vw] text-gray-600 text-center italic tracking-widest">Read about 3DWEBSOFT Foundation’s digital literacy initiative in rural communities. Through accessible computer and digital skills training, participants gain the knowledge and confidence to use technology for education, communication, and everyday opportunities.</p>     
+             <p className="w-[29vw] max-[979px]:w-[80vw] max-[500px]:text-sm text-gray-600 text-center italic tracking-widest">Read about 3DWEBSOFT Foundation’s digital literacy initiative in rural communities. Through accessible computer and digital skills training, participants gain the knowledge and confidence to use technology for education, communication, and everyday opportunities.</p>     
   </div>
 
 </div>
@@ -271,8 +272,8 @@ export default function App() {
   
   <div className="flex flex-col items-center max-[1108px]:items-start   gap-2 p-5">
 
-    <p className="text-3xl text-[#06896B] font-semibold max-[1108px]:text-2xl">Thank you for being with us on this journey</p>
-    <div className="flex flex-col gap-4 justify-start p-1 w-full tracking-widest">
+    <p className="text-3xl text-[#06896B] font-semibold max-[1108px]:text-2xl max-[500px]:text-3xl">Thank you for being with us on this journey</p>
+    <div className="flex flex-col gap-4 justify-start p-1 w-full tracking-widest max-[500px]:text-sm">
     <p className="text-left w-[35vw] text-gray-800 max-[1108px]:w-[90vw]">Your time, support, participation, and contribution can play a significant role in 3DWEBSOFT Foundation's efforts to empower individuals and strengthen communities.</p>
      <p className="text-left w-[35vw]  text-gray-800 max-[1108px]:w-[90vw]">Together, we can help create opportunities through education, skills, employment, and community development.</p>
      </div>

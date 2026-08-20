@@ -72,10 +72,10 @@
  <div className="flex flex-col z-80 gap-5 top-0 h-64  min-w-screen p-5 ">
                 <div className="bg-white w-full h-32 flex max-[887px]:flex-col max-[887px]:h-64 gap-20 max-[887px]:gap-5 items-center justify-center">
                       <div className="flex gap-4 max-[887px]:grid max-[887px]:grid-cols-2 max-[887px]:gap-x-10 max-[887px]:place-items-center ">
-                        <Link href="/Contact"><button className="border-1 cursor-pointer border-white bg-[#06896B] text-white font-bold rounded-full py-2 px-7">Volunteer</button></Link>
-                        <Link href="/Donate"><button className="border-1 cursor-pointer border-white bg-[#06896B] text-white font-bold rounded-full py-2 px-7">Donate</button></Link>
-                        <Link href="/Learn"><button className="border-1 border-white bg-[#06896B] text-white font-bold rounded-full py-2 px-7">Learn-Lms</button></Link>
-                        <Link href="https://www.3DWEBSOFTitsolutions.com/careers.html" className="border-1 border-white bg-[#06896B] text-white font-bold rounded-full py-2 px-7">Join-Us</Link>
+                        <Link href="/Contact"><button className="border-1 cursor-pointer border-white bg-[#06896B] text-white font-bold rounded-full py-2 text-sm px-7">Volunteer</button></Link>
+                        <Link href="/Donate"><button className="border-1 cursor-pointer border-white bg-[#06896B] text-white font-bold rounded-full py-2 text-sm px-7">Donate</button></Link>
+                        <Link href="/Learn"><button className="border-1 border-white bg-[#06896B] text-white font-bold rounded-full py-2 px-7 text-sm">Learn-Lms</button></Link>
+                        <Link href="https://www.3DWEBSOFTitsolutions.com/careers.html" className="border-1 border-white bg-[#06896B] text-white font-bold text-sm rounded-full py-2 px-7">Join-Us</Link>
                       </div>
                       <div className="flex gap-3">
                            <Link href="https://www.facebook.com/share/17i8pDvytw/"><p className="bg-blue-600 p-3 rounded-lg"><FaFacebookF/></p></Link>

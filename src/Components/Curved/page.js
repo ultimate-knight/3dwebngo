@@ -1,7 +1,7 @@
 export default function Curved() {
   return (
     <svg
-      className="h-[400px] w-[20px] shrink-0"
+      className="h-[400px]  max-[500px]:h-[350px]  w-[20px] shrink-0"
       viewBox="0 0 20 400"
       preserveAspectRatio="none"
      
