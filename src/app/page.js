@@ -75,10 +75,10 @@ export default function App() {
               <div className="relative" >
                 <img
                   src={slides[data].image}
-                  className="min-w-screen object-cover  rounded-lg max-[887px]:mt-40  h-[600px]"
+                  className="min-w-screen object-cover  rounded-lg max-[887px]:mt-20  h-[600px]"
                   
                 />
-                <div className="absolute inset-0 z-10 flex flex-col items-center justify-center rounded-lg max-[887px]:mt-40 bg-black/56 px-6 text-center text-white">
+                <div className="absolute inset-0 z-10 flex flex-col items-center justify-center rounded-lg max-[887px]:mt-20 bg-black/56 px-6 text-center text-white">
                   <p className="text-4xl font-extrabold">{slides[data].heading}</p>
                   <p className="mt-2 max-w-3xl text-base font-medium tracking-widest">{slides[data].text}</p>
                 </div>

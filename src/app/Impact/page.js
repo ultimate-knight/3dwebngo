@@ -18,8 +18,8 @@ export default function Impact() {
           {/* main */}
           <div className="flex flex-col   w-full -mt-10">
             <div className="relative w-full">
-            <img src="/empowering.jpeg" className="w-full h-[790px] max-[887px]:mt-40 object-cover"/>
-            <div className="absolute inset-0 z-10 flex flex-col max-[887px]:mt-40 items-center justify-center w-full rounded-lg bg-black/56  text-center text-white">
+            <img src="/empowering.jpeg" className="w-full h-[790px] max-[887px]:mt-20 object-cover"/>
+            <div className="absolute inset-0 z-10 flex flex-col max-[887px]:mt-20 items-center justify-center w-full rounded-lg bg-black/56  text-center text-white">
                   <p className="text-7xl font-extrabold">Impact stories</p>
                 </div>
             </div>

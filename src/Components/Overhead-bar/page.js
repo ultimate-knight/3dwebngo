@@ -70,7 +70,7 @@
  
  return (
  <div className="flex flex-col z-80 gap-5 top-0 h-64  min-w-screen p-5 ">
-                <div className="bg-white w-full h-32 flex max-[887px]:flex-col max-[887px]:h-64 gap-20 items-center justify-center">
+                <div className="bg-white w-full h-32 flex max-[887px]:flex-col max-[887px]:h-64 gap-20 max-[887px]:gap-5 items-center justify-center">
                       <div className="flex gap-4 max-[887px]:grid max-[887px]:grid-cols-2 max-[887px]:gap-x-10 max-[887px]:place-items-center ">
                         <Link href="/Contact"><button className="border-1 cursor-pointer border-white bg-[#06896B] text-white font-bold rounded-full py-2 px-7">Volunteer</button></Link>
                         <Link href="/Donate"><button className="border-1 cursor-pointer border-white bg-[#06896B] text-white font-bold rounded-full py-2 px-7">Donate</button></Link>
@@ -85,8 +85,8 @@
                   <p className="bg-blue-600 p-3 rounded-lg"><FaLinkedinIn/></p>
                       </div>
                 </div>
-                 <div className={`flex justify-start gap-20 p-5 items-center bg-[#06896B] min-w-screen h-52`}>
-                      <img src="/images2.jpeg"  className="pl-20 max-[1040px]:-ml-20 h-32 w-[270px]"/>
+                 <div className={`flex justify-start gap-20 p-5 items-center bg-[#06896B] min-w-screen h-28`}>
+                      <img src="/images2.jpeg"  className="pl-20 max-[1040px]:-ml-20 h-28 w-[270px]"/>
                       <div ref={mobileref} className="min-[1040px]:hidden  flex flex-col items-center justify-center">
                         {ham===true?<MenuIcon onClick={()=>setHam((prev)=>!prev)} size={50} className="absolute right-10"/>:<XIcon onClick={()=>setHam((prev)=>!prev)} size={50} className="absolute right-10"/>}
                           {ham===false && (

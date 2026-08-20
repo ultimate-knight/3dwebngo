@@ -33,34 +33,34 @@ export default function Contact() {
                 </div>
             </div>
             <div className="p-20 font-sans text-black">                      
-              <div className="flex gap-7 items-center w-full">
+              <div className="flex max-[1100px]:flex-col gap-7 items-center w-full">
                 <div className="flex flex-col gap-5">
                     <p className="text-[#06896B] font-semibold italic text-4xl">Partnerships</p>
-                    <p className="w-[25vw]">please write to us at <span className="italic text-[#06896B]">info.3DWEBSOFTorg@gmail.com</span> to know more about the partnership opportunities.</p>
+                    <p className="w-[25vw] max-[1100px]:w-[90vw]">please write to us at <span className="italic text-[#06896B] w-[25vw]">info.3DWEBSOFTorg@gmail.com</span> to know more about the partnership opportunities.</p>
                 </div>
                 <div className="flex flex-col gap-5">
                     <p className="text-[#06896B] font-semibold italic text-4xl">Admission</p>
-                    <p className="w-[25vw]">please write to us at <span className="italic text-[#06896B]">info.3DWEBSOFTorg@gmail.com</span> along with your course preference and contact details.</p>
+                    <p className="w-[25vw] max-[1100px]:w-[90vw]">please write to us at <span className="italic text-[#06896B] w-[25vw]">info.3DWEBSOFTorg@gmail.com</span> along with your course preference and contact details.</p>
                 </div>
                 <div className="flex flex-col gap-5">
                     <p className="text-[#06896B] font-semibold italic text-4xl">Volunteering</p>
-                    <p className="w-[25vw]">please write to us at <span className="italic text-[#06896B]">info.3DWEBSOFTorg@gmail.com</span> with your core skills, interest areas and location preference.
+                    <p className="w-[25vw] max-[1100px]:w-[90vw]">please write to us at <span className="italic text-[#06896B] w-[25vw]">info.3DWEBSOFTorg@gmail.com</span> with your core skills, interest areas and location preference.
 
 </p>
                 </div>
               </div>
               <div className="flex flex-col items-center italic pt-10 gap-3">
                         <p className="text-4xl text-[#06896b] font-semibold">OR</p>
-                        <p className="w-[80vw] p-2 rounded-lg bg-[#06896b] font-semibold text-center text-white text-3xl">Fill the form below</p>
+                        <p className="w-[80vw] max-[1100px]:w-[90vw] p-2 rounded-lg bg-[#06896b] font-semibold text-center text-white text-3xl">Fill the form below</p>
               </div>
               <div className="flex flex-col items-center  pt-20 gap-8">
                 <p className="text-[#06896b] font-semibold italic text-4xl">For Partnerships:</p>
-                <div className="grid grid-cols-3  gap-x-5 gap-y-5">
+                <div className="grid grid-cols-3 max-[900px]:grid-cols-1  gap-x-5 gap-y-5">
                     <select
                         value={state}
                         name="Type of partnership"
                         onChange={handleChange}
-                        className="w-[25vw] h-[50px] text-center border rounded-lg border-gray-800"
+                        className="w-[25vw] max-[900px]:w-[90vw] h-[50px] text-center border rounded-lg border-gray-800"
                     >
                         <option value="" disabled>
                             Select type of partnership
@@ -69,22 +69,22 @@ export default function Contact() {
                         <option value="csr project for implementation">csr project for implementation</option>
                         <option value="others">others</option>
                     </select>
-                    <input placeholder="Contact Person Name" className="w-[25vw] h-[50px] text-center border rounded-lg border-gray-800"/>
-                    <input placeholder="Contact Number" className="w-[25vw] h-[50px] text-center border rounded-lg border-gray-800"/>
-                    <input placeholder="Email Id" className="w-[25vw] h-[50px] text-center border rounded-lg border-gray-800"/>
-                    <input placeholder="Company Name" className="w-[25vw] h-[50px] text-center border rounded-lg border-gray-800"/>
-                    <input placeholder="Remarks" className="w-[25vw] h-[50px] text-center border rounded-lg border-gray-800"/>
+                    <input placeholder="Contact Person Name" className="w-[25vw] max-[900px]:w-[90vw]  h-[50px] text-center border rounded-lg border-gray-800"/>
+                    <input placeholder="Contact Number" className="w-[25vw] max-[900px]:w-[90vw] h-[50px] text-center border rounded-lg border-gray-800"/>
+                    <input placeholder="Email Id" className="w-[25vw] max-[900px]:w-[90vw] h-[50px] text-center border rounded-lg border-gray-800"/>
+                    <input placeholder="Company Name" className="w-[25vw] max-[900px]:w-[90vw] h-[50px] text-center border rounded-lg border-gray-800"/>
+                    <input placeholder="Remarks" className="w-[25vw] max-[900px]:w-[90vw] h-[50px] text-center border rounded-lg border-gray-800"/>
                 </div>
                 <button className="w-fit px-4 py-2 rounded-lg text-white bg-[#06996b]">Submit</button>
               </div>
                <div className="flex flex-col items-center  pt-20 gap-8">
                 <p className="text-[#06896b] font-semibold italic text-4xl">For Admission Inquiry:</p>
-                <div className="grid grid-cols-3 gap-x-5 gap-y-5">
+                <div className="grid grid-cols-3 max-[900px]:grid-cols-1 gap-x-5 gap-y-5">
                     <select
                         value={coursePreference}
                         name="Type of partnership"
                         onChange={(e)=>setCoursePreference(e.target.value)}
-                        className="w-[25vw] h-[50px] text-center border rounded-lg border-gray-800"
+                        className="w-[25vw] max-[900px]:w-[90vw] h-[50px] text-center border rounded-lg border-gray-800"
                     >
                         <option value="" disabled>
                             Course preference
@@ -97,23 +97,23 @@ export default function Contact() {
                         <option value="Fullstack">Fullstack</option>
                         <option value="others">others</option>
                     </select>
-                    <input placeholder="City" className="w-[25vw] h-[50px] text-center border rounded-lg border-gray-800"/>
-                    <input placeholder="Student Name" className="w-[25vw] h-[50px] text-center border rounded-lg border-gray-800"/>
-                    <input placeholder="Contact Number" className="w-[25vw] h-[50px] text-center border rounded-lg border-gray-800"/>
-                    <input placeholder="Email-Id" className="w-[25vw] h-[50px] text-center border rounded-lg border-gray-800"/>
-                    <input placeholder="Remarks" className="w-[25vw] h-[50px] text-center border rounded-lg border-gray-800"/>
+                    <input placeholder="City" className="w-[25vw] max-[900px]:w-[90vw] h-[50px] text-center border rounded-lg border-gray-800"/>
+                    <input placeholder="Student Name" className="w-[25vw] max-[900px]:w-[90vw] h-[50px] text-center border rounded-lg border-gray-800"/>
+                    <input placeholder="Contact Number" className="w-[25vw] max-[900px]:w-[90vw] h-[50px] text-center border rounded-lg border-gray-800"/>
+                    <input placeholder="Email-Id" className="w-[25vw] max-[900px]:w-[90vw] h-[50px] text-center border rounded-lg border-gray-800"/>
+                    <input placeholder="Remarks" className="w-[25vw] max-[900px]:w-[90vw] h-[50px] text-center border rounded-lg border-gray-800"/>
                 </div>
                 <button className="w-fit px-4 py-2 rounded-lg text-white bg-[#06996b]">Submit</button>
               </div>
                <div className="flex flex-col items-center  pt-20 gap-8">
                 <p className="text-[#06896b] font-semibold italic text-4xl">For NGO Partnership:</p>
-                <div className="grid grid-cols-3 gap-x-5 gap-y-5">
-                    <input placeholder="Your NGO Name" className="w-[25vw] h-[50px] text-center border rounded-lg border-gray-800"/>
-                    <input placeholder="Contact Person Name" className="w-[25vw] h-[50px] text-center border rounded-lg border-gray-800"/>
-                    <input placeholder="Contact Number" className="w-[25vw] h-[50px] text-center border rounded-lg border-gray-800"/>
-                    <input placeholder="City" className="w-[25vw] h-[50px] text-center border rounded-lg border-gray-800"/>
-                    <input placeholder="Email" className="w-[25vw] h-[50px] text-center border rounded-lg border-gray-800"/>
-                    <input placeholder="Remarks" className="w-[25vw] h-[50px] text-center border rounded-lg border-gray-800"/>
+                <div className="grid grid-cols-3  max-[900px]:grid-cols-1 gap-x-5 gap-y-5">
+                    <input placeholder="Your NGO Name" className="w-[25vw] max-[900px]:w-[90vw] h-[50px] text-center border rounded-lg border-gray-800"/>
+                    <input placeholder="Contact Person Name" className="w-[25vw] max-[900px]:w-[90vw] h-[50px] text-center border rounded-lg border-gray-800"/>
+                    <input placeholder="Contact Number" className="w-[25vw] max-[900px]:w-[90vw] h-[50px] text-center border rounded-lg border-gray-800"/>
+                    <input placeholder="City" className="w-[25vw] max-[900px]:w-[90vw] h-[50px] text-center border rounded-lg border-gray-800"/>
+                    <input placeholder="Email" className="w-[25vw] max-[900px]:w-[90vw] h-[50px] text-center border rounded-lg border-gray-800"/>
+                    <input placeholder="Remarks" className="w-[25vw] max-[900px]:w-[90vw] h-[50px] text-center border rounded-lg border-gray-800"/>
                 </div>
                 <button className="w-fit px-4 py-2 rounded-lg text-white bg-[#06996b]">Submit</button>
                 
@@ -121,12 +121,12 @@ export default function Contact() {
               </div>
                <div className="flex flex-col items-center  pt-20 gap-8">
                 <p className="text-[#06896b] font-semibold italic text-4xl">Be a Volunteer:</p>
-                <div className="grid grid-cols-3 gap-x-5 gap-y-5">
+                <div className="grid grid-cols-3  max-[900px]:grid-cols-1 gap-x-5 gap-y-5">
                     <select
                         value={partnershipType}
                         name="Type of partnership"
                         onChange={(e)=>setPartnershipType(e.target.value)}
-                        className="w-[25vw] h-[50px] text-center border rounded-lg border-gray-800"
+                        className="w-[25vw] max-[900px]:w-[90vw] h-[50px] text-center border rounded-lg border-gray-800"
                     >
                         <option value="" disabled>
                             State
@@ -136,15 +136,15 @@ export default function Contact() {
                         <option value="others">Karnataka</option>
                         <option value="others">Others</option>
                     </select>
-                    <input placeholder="Volunteer Name" className="w-[25vw] h-[50px] text-center border rounded-lg border-gray-800"/>
-                    <input placeholder="Contact Number" className="w-[25vw] h-[50px] text-center border rounded-lg border-gray-800"/>
-                    <input placeholder="Email Id" className="w-[25vw] h-[50px] text-center border rounded-lg border-gray-800"/>
-                    <input placeholder="City" className="w-[25vw] h-[50px] text-center border rounded-lg border-gray-800"/>
+                    <input placeholder="Volunteer Name" className="w-[25vw] max-[900px]:w-[90vw] h-[50px] text-center border rounded-lg border-gray-800"/>
+                    <input placeholder="Contact Number" className="w-[25vw] max-[900px]:w-[90vw] h-[50px] text-center border rounded-lg border-gray-800"/>
+                    <input placeholder="Email Id" className="w-[25vw] max-[900px]:w-[90vw] h-[50px] text-center border rounded-lg border-gray-800"/>
+                    <input placeholder="City" className="w-[25vw] max-[900px]:w-[90vw] h-[50px] text-center border rounded-lg border-gray-800"/>
                     <select
                         value={Area}
                         name="Type of partnership"
                         onChange={(e)=>setArea(e.target.value)}
-                        className="w-[25vw] h-[50px] text-center border rounded-lg border-gray-800"
+                        className="w-[25vw] max-[900px]:w-[90vw] h-[50px] text-center border rounded-lg border-gray-800"
                     >
                         <option value="" disabled>
                             Area of Interest
@@ -167,9 +167,9 @@ export default function Contact() {
               
               
               
-              <div className="flex pt-20">
+              <div className="flex pt-20 max-[900px]:flex-col">
                 <MapEmbed className=""/>
-                <div className="w-[50vw] bg-[#06896B] rounded-lg flex text-white flex-col gap-7 items-center justify-center ">
+                <div className="w-[50vw] bg-[#06896B] rounded-lg flex text-white flex-col gap-7 items-center p-10  justify-center max-[900px]:w-[90vw]">
                         <p className="font-bold text-4xl">Registered Office:</p>
                         <div className="h-2 bg-white w-[70px]">
                             

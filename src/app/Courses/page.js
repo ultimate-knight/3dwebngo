@@ -87,7 +87,7 @@ function next() {
           {/* main */}
           <div className="flex flex-col   w-full -mt-10">
             <div className="relative w-full">
-            <img src="/courses.jpeg" className="w-full h-[790px] max-[887px]:mt-40 object-cover"/>
+            <img src="/courses.jpeg" className="w-full h-[790px] max-[887px]:mt-20 object-cover"/>
             <div className="absolute inset-0 z-10 flex flex-col items-center justify-center w-full rounded-lg bg-black/56  text-center text-white">
                   <p className="text-7xl font-extrabold">Building skills for tomorrow</p>
                 </div>
@@ -231,13 +231,13 @@ function next() {
 }
                     <ChevronRight size={70} onClick={next}/>
                 </div>
-                 <div className=" flex flex-col items-center w-full  gap-7 pt-20 p-30 ">
-                        <div className="flex flex-col items-start w-full gap-3 px-17">
+                 <div className=" flex flex-col items-start w-full  gap-7 pt-20 max-[1120px]:p-10 p-30 ">
+                        <div className="flex flex-col  gap-3">
                         <p className="text-[#06896B] font-bold text-4xl">Contact Us</p>
                         <p className="text-black text-2xl">For Enrollment, kindly share your Details</p>
                         </div>
-                        <div className="grid grid-cols-2 gap-x-7 gap-y-7">
-                            <select value={text} onChange={(e)=>setText(e.target.value)} className="w-[30vw] h-[50px] border-1 p-2 border-black">
+                        <div className="grid grid-cols-2 max-[1120px]:grid-cols-1 gap-x-11  gap-y-7">
+                            <select value={text} onChange={(e)=>setText(e.target.value)} className="w-[30vw] max-[1120px]:w-[80vw] h-auto border-1 p-2 border-black">
                                 <option value="">select course preference</option>
                                 <option value="Awareness course">Awareness course</option>
                                 <option value="Career & Skill development">Career & Skill development</option>
@@ -245,11 +245,11 @@ function next() {
                                 <option value="Enterprenuerial courses">Enterprenuerial courses</option>
                                 <option value="AI enabled courses in IT and ITES">AI enabled courses in IT and ITES</option>
                             </select>
-                            <input placeholder="Name" className="w-[30vw] p-1 h-[50px] border-1 border-black"/>
-                            <input  placeholder="Mobile No." className="w-[30vw] p-1 h-[50px] border-1 border-black"/>
-                            <input type="email" placeholder="Email Id" className="w-[30vw] p-1 h-[50px] border-1 border-black"/>
-                            <input placeholder="State" className="w-[30vw] p-1 h-[50px] border-1 border-black"/>
-                            <select value={letter} onChange={(e)=>setLetter(e.target.value)} className="w-[30vw] h-[50px] border-1 border-black">
+                            <input placeholder="Name" className="w-[30vw] max-[1120px]:w-[80vw] p-1 h-auto border-1 border-black"/>
+                            <input  placeholder="Mobile No." className="w-[30vw] max-[1120px]:w-[80vw] p-1 h-auto border-1 border-black"/>
+                            <input type="email" placeholder="Email Id" className="w-[30vw] max-[1120px]:w-[80vw] p-1 h-auto border-1 border-black"/>
+                            <input placeholder="State" className="w-[30vw] max-[1120px]:w-[80vw] p-1 h-auto border-1 border-black"/>
+                            <select value={letter} onChange={(e)=>setLetter(e.target.value)} className="w-[30vw] max-[1120px]:w-[80vw] max-[1120px]:p-3 h-auto border-1 border-black">
                                 <option value="">select gender</option>
                                 <option value="male">male</option>
                                 <option value="female">female</option>

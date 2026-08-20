@@ -69,8 +69,8 @@ export default function About() {
       {/* main */}
       <div className="flex flex-col   w-full -mt-10">
         <div className="relative w-full">
-          <img src="/abouter.jpeg" className="w-full h-[790px] max-[887px]:mt-40 object-cover" />
-          <div className="absolute inset-0 z-10 flex flex-col items-center justify-center w-full rounded-lg max-[887px]:mt-40 bg-black/56  text-center text-white">
+          <img src="/abouter.jpeg" className="w-full h-[790px] max-[887px]:mt-20 object-cover" />
+          <div className="absolute inset-0 z-10 flex flex-col items-center justify-center w-full rounded-lg max-[887px]:mt-20 bg-black/56  text-center text-white">
             <p className="text-7xl font-extrabold">About us</p>
           </div>
         </div>
@@ -126,7 +126,7 @@ export default function About() {
             </p>
           </div>
           <div className="grid grid-cols-3  gap-y-12 gap-x-20 max-[1000px]:grid-cols-1 p-3 max-[500px]:pl-8 pl-10">
-            <div className="w-[28vw] max-[1000px]:w-[85vw] flex flex-col hover:-translate-y-5 transform-transition duration-300 p-5 items-center justify-center gap-7  shadow-xl shadow-gray-300 rounded-lg border-2 border-gray-400 min-h-[300px]">
+            <div className="w-[28vw] order-1 max-[1000px]:w-[85vw] flex flex-col hover:-translate-y-5 transform-transition duration-300 p-5 items-center justify-center gap-7  shadow-xl shadow-gray-300 rounded-lg border-2 border-gray-400 min-h-[300px]">
               <img
                 src="/director.jpeg"
                 className="w-[150px] h-[150px] border-4 border-green-600 aspect-square rounded-full"
@@ -142,7 +142,22 @@ export default function About() {
                 staffing and software delivery.
               </p>
             </div>
-            <div className="w-[28vw] max-[1000px]:w-[85vw] transform-transition duration-300 hover:-translate-y-5 flex flex-col p-5  items-center justify-center gap-7  shadow-xl shadow-gray-300 rounded-lg border-2 border-gray-400 min-h-[300px]">
+            <div className="w-[28vw] order-2 max-[1000px]:w-[85vw] transform-transition duration-300 hover:-translate-y-5 flex flex-col p-5 items-center justify-center gap-7  shadow-xl shadow-gray-300 rounded-lg border-2 border-gray-400 min-h-[300px]">
+              <img
+                src="/director3.jpeg"
+                className="w-[150px] h-[150px] border-4 border-green-600 aspect-square rounded-full"
+              />
+              <div className="flex  flex-col items-center gap-1">
+                <p className="text-xl text-[#06896B] font-bold">
+                  Anuradha Devanabonia
+                </p>
+                <p>Director</p>
+              </div>
+              <p className="text-center w-[25vw] max-[1000px]:w-[70vw] text-sm">
+                Leads strategic planning and manages key business functions.
+              </p>
+            </div>
+            <div className="w-[28vw] order-7 max-[1000px]:w-[85vw] transform-transition duration-300 hover:-translate-y-5 flex flex-col p-5  items-center justify-center gap-7  shadow-xl shadow-gray-300 rounded-lg border-2 border-gray-400 min-h-[300px]">
               <img
                 src="/ishwari.jpeg"
                 className="w-[150px] h-[150px] border-4 border-green-600 aspect-square rounded-full"
@@ -158,7 +173,7 @@ export default function About() {
                 organizational goals in vijaypur.
               </p>
             </div>
-            <div className="w-[28vw] max-[1000px]:w-[85vw] transform-transition duration-300 hover:-translate-y-5 flex flex-col p-5  items-center justify-center gap-7  shadow-xl shadow-gray-300 rounded-lg border-2 border-gray-400 min-h-[300px]">
+            <div className="w-[28vw] order-4 max-[1000px]:w-[85vw] transform-transition duration-300 hover:-translate-y-5 flex flex-col p-5  items-center justify-center gap-7  shadow-xl shadow-gray-300 rounded-lg border-2 border-gray-400 min-h-[300px]">
               <img
                 src="/wanishree.jpeg"
                 className="w-[150px] h-[150px] border-4 border-green-600 aspect-square rounded-full"
@@ -172,7 +187,7 @@ export default function About() {
                 organizational goals.
               </p>
             </div>
-            <div className="w-[28vw] max-[1000px]:w-[85vw] transform-transition duration-300 hover:-translate-y-5 flex flex-col p-5  items-center justify-center gap-7  shadow-xl shadow-gray-300 rounded-lg border-2 border-gray-400 min-h-[300px]">
+            <div className="w-[28vw] order-5 max-[1000px]:w-[85vw] transform-transition duration-300 hover:-translate-y-5 flex flex-col p-5  items-center justify-center gap-7  shadow-xl shadow-gray-300 rounded-lg border-2 border-gray-400 min-h-[300px]">
               <img
                 src="/rajkumar.jpeg"
                 className="w-[150px] h-[150px] border-4 border-green-600 aspect-square rounded-full"
@@ -188,7 +203,7 @@ export default function About() {
                 and ensures quality service delivery.
               </p>
             </div>
-            <div className="w-[28vw] max-[1000px]:w-[85vw] transform-transition duration-300 hover:-translate-y-5 flex flex-col p-5  items-center justify-center gap-7  shadow-xl shadow-gray-300 rounded-lg border-2 border-gray-400 min-h-[300px]">
+            <div className="w-[28vw] order-4 max-[1000px]:w-[85vw] transform-transition duration-300 hover:-translate-y-5 flex flex-col p-5  items-center justify-center gap-7  shadow-xl shadow-gray-300 rounded-lg border-2 border-gray-400 min-h-[300px]">
               <img
                 src="/manan.jpeg"
                 className="w-[150px] h-[150px] border-4 border-green-600 aspect-square rounded-full"
@@ -202,22 +217,8 @@ export default function About() {
                 organizational goals in bilgi.
               </p>
             </div>
-            <div className="w-[28vw] max-[1000px]:w-[85vw] transform-transition duration-300 hover:-translate-y-5 flex flex-col p-5 items-center justify-center gap-7  shadow-xl shadow-gray-300 rounded-lg border-2 border-gray-400 min-h-[300px]">
-              <img
-                src="/director3.jpeg"
-                className="w-[150px] h-[150px] border-4 border-green-600 aspect-square rounded-full"
-              />
-              <div className="flex flex-col items-center gap-1">
-                <p className="text-xl text-[#06896B] font-bold">
-                  Anuradha Devanabonia
-                </p>
-                <p>Director</p>
-              </div>
-              <p className="text-center w-[25vw] max-[1000px]:w-[70vw] text-sm">
-                Leads strategic planning and manages key business functions.
-              </p>
-            </div>
-            <div className="w-[28vw] max-[1000px]:w-[85vw] transform-transition duration-300 hover:-translate-y-5 flex flex-col p-5 items-center justify-center gap-7  shadow-xl shadow-gray-300 rounded-lg border-2 border-gray-400 min-h-[300px]">
+            
+            <div className="w-[28vw] order-3 max-[1000px]:w-[85vw] transform-transition duration-300 hover:-translate-y-5 flex flex-col p-5 items-center justify-center gap-7  shadow-xl shadow-gray-300 rounded-lg border-2 border-gray-400 min-h-[300px]">
               <img
                 src="/director2.jpeg"
                 className="w-[150px] h-[150px] border-4 border-green-600 aspect-square rounded-full"
@@ -231,7 +232,7 @@ export default function About() {
                 management.
               </p>
             </div>
-            <div className="w-[28vw] max-[1000px]:w-[85vw] transform-transition duration-300 hover:-translate-y-5 flex flex-col p-5 items-center justify-center gap-7  shadow-xl shadow-gray-300 rounded-lg border-2 border-gray-400 min-h-[300px]">
+            <div className="w-[28vw] order-3 max-[1000px]:w-[85vw] transform-transition duration-300 hover:-translate-y-5 flex flex-col p-5 items-center justify-center gap-7  shadow-xl shadow-gray-300 rounded-lg border-2 border-gray-400 min-h-[300px]">
               <img
                 src="/director5.jpeg"
                 className="w-[150px] h-[150px] border-4 border-green-600 aspect-square rounded-full"

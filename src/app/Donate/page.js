@@ -15,15 +15,15 @@ export default function Donate() {
           <Overheadbar/>
           
           {/* main */}
-          <div className="flex gap-5 items-center justify-center">
-          <div className="flex flex-col gap-10 text-black  w-full p-20">
+          <div className="flex gap-5 max-[900px]:flex-col items-center justify-center">
+          <div className="flex flex-col gap-10 text-black max-[900px]:mt-30  w-full max-[900px]:p-10  p-20">
                 <p className="text-4xl font-semibold text-[#06896B]">Support Those Who Need It Most</p>      
                 <p>3DWebSoft Foundation provides employability and digital skills training to at-risk youth, so they can build a livelihood and support their families during difficult times. Girls, in particular, need this opportunity — when family resources are limited, their education and skilling are too often the first to be sacrificed.</p>   
                 <p>You can also choose to support at-risk families with essentials like food, learning materials, and other critical needs. And to counter misinformation and the digital divide in underserved communities, you can support us in educating vulnerable sections of society on digital literacy, online safety, and responsible use of technology.</p>  
                 <p>We need your support in this mission. Donate now, and change a life today.</p>      
                 <p>After you donate, please share a screenshot of your contribution at info.3dwebsoftorg@gmail.com so we can acknowledge and track your support.</p>
 </div>
-<img src="/qrcode.jpeg" className="w-[30vw] h-[400px]"/>
+<img src="/qrcode.jpeg" className="w-[30vw] max-[900px]:w-[80vw] max-[900px]:h-auto h-auto"/>
 </div>
 {/* footer */}
 <Footer/>          

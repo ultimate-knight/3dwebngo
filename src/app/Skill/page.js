@@ -17,8 +17,8 @@ export default function Skill() {
           {/* main */}
           <div className="flex flex-col   w-full -mt-10">
             <div className="relative w-full">
-            <img src="/kerbol.jpeg" className="w-full h-[790px] object-cover max-[887px]:mt-40"/>
-            <div className="absolute inset-0 z-10 flex flex-col max-[887px]:mt-40 items-center justify-center w-full rounded-lg bg-black/56  text-center text-white">
+            <img src="/kerbol.jpeg" className="w-full h-[790px] object-cover max-[887px]:mt-20"/>
+            <div className="absolute inset-0 z-10 flex flex-col max-[887px]:mt-20 items-center justify-center w-full rounded-lg bg-black/56  text-center text-white">
                   <p className="text-7xl font-extrabold max-[800px]:text-5xl">Skilling at 3DWEBSOFT Foundation</p>
                 </div>
             </div>

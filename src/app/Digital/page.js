@@ -17,8 +17,8 @@ export default function Digital() {
           {/* main */}
           <div className="flex flex-col gap-20  w-full -mt-10">
             <div className="relative w-full">
-            <img src="/negerg1.jpeg" className="w-full h-[790px] max-[887px]:mt-40 object-cover"/>
-            <div className="absolute inset-0 z-10 flex flex-col items-center max-[887px]:mt-40 justify-center w-full rounded-lg bg-black/56  text-center text-white">
+            <img src="/negerg1.jpeg" className="w-full h-[790px] max-[887px]:mt-20 object-cover"/>
+            <div className="absolute inset-0 z-10 flex flex-col items-center max-[887px]:mt-20 justify-center w-full rounded-lg bg-black/56  text-center text-white">
                   <p className="text-7xl font-extrabold">Digital Sparks Learning Station</p>
                 </div>
             </div>

@@ -17,8 +17,8 @@ export default function Placement() {
           {/* main */}
           <div className="flex flex-col   w-full -mt-10">
             <div className="relative w-full">
-            <img src="/Placementer.jpeg" className="w-full h-[790px] max-[887px]:mt-40 object-cover"/>
-            <div className="absolute inset-0 z-10 flex flex-col items-center justify-center max-[887px]:mt-40 w-full rounded-lg bg-black/56  text-center text-white">
+            <img src="/Placementer.jpeg" className="w-full h-[790px] max-[887px]:mt-20 object-cover"/>
+            <div className="absolute inset-0 z-10 flex flex-col items-center justify-center max-[887px]:mt-20 w-full rounded-lg bg-black/56  text-center text-white">
                   <p className="text-7xl font-extrabold">Placement Partners</p>
                 </div>
             </div>
@@ -27,7 +27,8 @@ export default function Placement() {
                     <div className="flex flex-col items-start justify-center gap-20">
                         <div className="flex flex-col gap-7">
                     <p className="text-[#06896B] font-bold text-3xl">RECRUITMENT OF 3DWEBSOFT FOUNDATION STUDENTS</p>
-                    <p className="w-[90vw]">3DWebSoft Foundation runs training programs that provide industry-focused vocational and technology courses. Our objective is to open doors to employment in the organized industry for under-served youth. Students at our centers get trained in a range of professional and industry-specific skill courses. We believe these young people will transform their own lives and those of their families when they enter the workforce and go on to lead productive, independent lives. Placement Partners who give these youth an opportunity and the support to grow therefore play a vital role in the entire ecosystem.</p>
+                    <p className="w-[90vw]">3DWebSoft Foundation runs training programs that provide industry-focused vocational and technology courses. Our objective is to open doors to employment in the organized industry for under-served youth. Students at our centers get trained in a range of professional and industry-specific skill courses.</p>
+                    <p> We believe these young people will transform their own lives and those of their families when they enter the workforce and go on to lead productive, independent lives. Placement Partners who give these youth an opportunity and the support to grow therefore play a vital role in the entire ecosystem.</p>
                     <p className="w-[90vw]">Our training programs combine rigorous theoretical learning with essential life-skills development that helps students perform well in interviews and in the workplace. Our placement partners have consistently been satisfied with how 3DWebSoft Foundation alumni adapt to and thrive in the professional space.</p>
                     
                     </div>

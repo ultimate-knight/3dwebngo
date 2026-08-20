@@ -16,7 +16,7 @@ export default function Blog() {
           
           {/* main */}
           <div className="flex flex-col    w-full">
-            <div className="min-w-screen flex flex-col gap-5 max-[887px]:mt-40 p-10 items-center justify-center max-[887px]:justify-start  text-white min-h-[300px] bg-[#4038]">
+            <div className="min-w-screen flex flex-col gap-5 max-[887px]:mt-20 p-10 items-center justify-center max-[887px]:justify-start  text-white min-h-[300px] bg-[#4038]">
                             <p className="text-yellow-700 font-semibold ">Insights / Blogs</p>
                             <p className="text-4xl font-semibold text-center">Blogs, Ideas & Industry Updates</p>
                             <p className="text-lg text-center">Technology trends, expert insights and career guidance for students and professionals.</p>

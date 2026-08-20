@@ -17,8 +17,8 @@ export default function Funding() {
           {/* main */}
           <div className="flex flex-col   w-full -mt-10">
             <div className="relative w-full">
-            <img src="/Funder.jpeg" className="w-full h-[790px] max-[887px]:mt-40 object-cover"/>
-            <div className="absolute inset-0 z-10 flex flex-col items-center max-[887px]:mt-40 justify-center w-full rounded-lg bg-black/56  text-center text-white">
+            <img src="/Funder.jpeg" className="w-full h-[790px] max-[887px]:mt-20 object-cover"/>
+            <div className="absolute inset-0 z-10 flex flex-col items-center max-[887px]:mt-20 justify-center w-full rounded-lg bg-black/56  text-center text-white">
                   <p className="text-7xl font-extrabold">Funding Partners</p>
                 </div>
             </div>
@@ -26,7 +26,9 @@ export default function Funding() {
             <div className="flex flex-col gap-20 text-black  p-15 max-[1000px]:p-5 mt-10">
                     <div className="flex flex-col gap-5">
                     <p className="text-[#06896B] font-bold text-3xl">PARTNER WITH 3DWEBSOFT FOUNDATION</p>
-                    <p className="w-[80vw] max-[1000px]:w-[90vw]">At 3DWebSoft Foundation, we deeply value our collaborations with the funding partners who support us in our mission to eliminate unemployment and digital illiteracy across India. 3DWebSoft Foundation has well-defined, technology-driven systems and processes in place to deliver skill-development and empowerment programs at the grassroots level. We are committed to ensuring a high level of transparency, which builds the credibility and accountability that define every project we deliver with our corporate partners.</p>
+                    <p className="w-[80vw] max-[1000px]:w-[90vw]">At 3DWebSoft Foundation, we deeply value our collaborations with the funding partners who support us in our mission to eliminate unemployment and digital illiteracy across India.</p>
+                    <p>3DWebSoft Foundation has well-defined, technology-driven systems and processes in place to deliver skill-development and empowerment programs at the grassroots level.</p>
+                    <p>  We are committed to ensuring a high level of transparency, which builds the credibility and accountability that define every project we deliver with our corporate partners.</p>
                     </div>
                     <div className="flex flex-col gap-5">
                         <p className="uppercase text-[#06896B] font-bold text-3xl">Reasons to partner with us:</p>

@@ -17,8 +17,8 @@ export default function Literacy() {
           {/* main */}
           <div className="flex flex-col   w-full -mt-10">
             <div className="relative w-full">
-            <img src="/literatur23.jpeg" className="w-full h-[790px] max-[887px]:mt-40 object-cover"/>
-            <div className="absolute inset-0 z-10 flex flex-col max-[887px]:mt-40  items-center justify-center w-full rounded-lg bg-black/56  text-center text-white">
+            <img src="/literatur23.jpeg" className="w-full h-[790px] max-[887px]:mt-20 object-cover"/>
+            <div className="absolute inset-0 z-10 flex flex-col max-[887px]:mt-20  items-center justify-center w-full rounded-lg bg-black/56  text-center text-white">
                   <p className="text-7xl font-extrabold">Digital Literacy Program</p>
                 </div>
             </div>

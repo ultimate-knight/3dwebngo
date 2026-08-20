@@ -16,7 +16,7 @@ export default function Gallery() {
           
           {/* main */}
           <div className="flex flex-col gap-10   w-full">
-            <div className="min-w-screen flex flex-col gap-5 items-center text-center max-[800px]:justify-start max-[800px]:p-10 justify-center p-5 max-[887px]:mt-40  text-white min-h-[300px] bg-[#4038]">
+            <div className="min-w-screen flex flex-col gap-5 items-center text-center max-[800px]:justify-start max-[800px]:p-10 justify-center p-5 max-[887px]:mt-20  text-white min-h-[300px] bg-[#4038]">
                             <p className="text-yellow-700 font-semibold">Gallery</p>
                             <p className="text-4xl font-semibold">Campus Gallery</p>
                             <p>A glimpse into classrooms, workshops and student life at 3DWEBSOFT foundation.</p>

@@ -17,8 +17,8 @@ export default function Ngo() {
           {/* main */}
           <div className="flex flex-col   w-full -mt-10">
             <div className="relative w-full">
-            <img src="/ngorg.jpeg" className="w-full h-[790px] max-[887px]:mt-40 object-cover"/>
-            <div className="absolute inset-0 z-10 flex flex-col items-center  max-[887px]:mt-40 justify-center w-full rounded-lg bg-black/56  text-center text-white">
+            <img src="/ngorg.jpeg" className="w-full h-[790px] max-[887px]:mt-20 object-cover"/>
+            <div className="absolute inset-0 z-10 flex flex-col items-center  max-[887px]:mt-20 justify-center w-full rounded-lg bg-black/56  text-center text-white">
                   <p className="text-7xl font-extrabold">NGO Partners</p>
                 </div>
             </div>
@@ -27,7 +27,9 @@ export default function Ngo() {
                     <div className="flex flex-col items-start justify-center gap-20">
                         <div className="flex flex-col gap-7">
                     <p className="text-[#06896B] font-bold text-3xl">3DReach Program</p>
-                    <p className="w-[90vw]">3DWebSoft Foundation, through its 3DReach Program, works to build the capacity of partner NGOs that are providing training and education opportunities to underprivileged youth across the country. Under 3DReach, we equip our partners with all the support they need to implement high-quality programs that create real benefit for young people. Faculty training, curriculum, assessments, and industry-recognized certification are some of the key offerings we provide to partner organizations.</p>
+                    <p className="w-[90vw]">3DWebSoft Foundation, through its 3DReach Program, works to build the capacity of partner NGOs that are providing training and education opportunities to underprivileged youth across the country. </p>
+                    <p>Under 3DReach, we equip our partners with all the support they need to implement high-quality programs that create real benefit for young people.</p>
+                    <p> Faculty training, curriculum, assessments, and industry-recognized certification are some of the key offerings we provide to partner organizations.</p>
                    
                     
                     </div>
